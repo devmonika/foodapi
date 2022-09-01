@@ -44,9 +44,9 @@ const getMealDetails = (idMeal) => {
 }
 
 
-const displayMealDetails = () => {
+const displayMealDetails = meal => {
     const detailesContainer = document.getElementById('detailes-container');
-    detailesContainer.innerHTML = '';
+    detailesContainer.innerHTML = ``;
     const detailesDiv = document.createElement('div');
     detailesDiv.classList.add('card');
     detailesDiv.innerHTML = `
